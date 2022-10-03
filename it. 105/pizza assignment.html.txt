@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>In-Class Forms</title>
+  <title>Victor's Pizza! </title>
  </head>
  <body>
   <form name="inclass">
