@@ -2,6 +2,7 @@
  <head>
  <body>
 <h1>Victor's Pizza</h1>
+
 <style>
 table, th, td {
   border:1px solid black;
@@ -83,6 +84,17 @@ table, th, td {
   <label for="css">Delivery</label>
   <input type="radio" id="pickup" name="option" value="pickup">
   <label for="javascript">Pickup</label>
+
+<form action="/action_page.php">
+  <p><label for="Comments/concerns"><U>Comments or Concerns:</U></label></p>
+  <textarea id="Comments/Concerns" name="Comments/Concerns" rows="6" cols="70">Enter here.</textarea>
+  <br>
+  <input type="submit" value="Submit Order">
+  <input type="reset"  value="Reset Order">
+</form>
+
+<p><i>Thank you for ordering with Victor's Pizza!</i></p>
+
 
 </form>
 
