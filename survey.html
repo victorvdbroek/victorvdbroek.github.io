@@ -1,5 +1,24 @@
 
 <html>
+
+
+<head>
+ <title>College Survey</title>
+ <script>
+ function glue()
+ {
+ document.querySelector(“#major”).value =
+ document.querySelector(“#school”).value
+ + “ “
+ + document.querySelector(“#sport”).value
+ }
+ function hey()
+ {
+document.querySelector(“#changeText”).innerHTML =
+ "I hope you like " +
+document.querySelector("#school").value;
+ }
+ </script>
 <body>
 
 <h1>College Survey!</h1>
