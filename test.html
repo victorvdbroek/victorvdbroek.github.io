@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"> 
    <head>
-      <title>Javascript</title>
+<H1> Who's your Mascot?</h1>
+      <title>School Mascot</title>
       <script>
          function glue()
          {
@@ -12,7 +13,7 @@
          }
          function hey()
          {
-           document.querySelector("#changeText").innerHTML = "Go "+ document.querySelector("#team").value;
+           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#team").value;
          }
       </script>
    </head>
@@ -21,7 +22,7 @@
         School: <input type=text id="school"><br>
         Animal:  <input type=text id="animal" 
                           onchange="glue();"><br>
-        Teammascot:  <input type=text id="team" onchange="Go ();"><br>
+        Teammascot:  <input type=text id="team" onchange="Hi ();"><br>
         <input type=reset value="clear entries">
       </form>
       <div id=changeText>
@@ -29,3 +30,4 @@
       </div>
    </body>
 </html>
+
