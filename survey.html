@@ -5,11 +5,18 @@
 <head>
 <script>
 function glue()
-{
+ {
+ document.querySelector(“#team”).value =
+ document.querySelector(“#school”).value
+ + “ “
+ + document.querySelector(“#animal”).value
+ }
+ function hey()
+ {
 document.querySelector(“#changeText”).innerHTML =
- "Hi " +
-document.querySelector("#team").value;
-}
+ "GO " +
+document.querySelector("#teammascot").value;
+ }
  </script>
 </head>
 <body>
@@ -17,11 +24,12 @@ document.querySelector("#team").value;
 <h1>College Survey!</h1>
 
 <form>
- Major: <input type=text id="major">
+ School: <input type=text id="school">
 <br>
- School: <input type=text id="school"><br>
- Team: <input type=text id="team"
-onchange="hey()!;"><br><br><br><br>
+ Animal: <input type=text id="animal">
+onchange="glue();" <br>
+ Teammascot: <input type=text id="team"
+onchange="GO();"><br><br><br><br>
 </form>
 
 
