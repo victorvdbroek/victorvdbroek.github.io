@@ -5,15 +5,11 @@
 <head>
 <script>
 function glue()
- {
- + document.querySelector(“#team”).value
- }
- function hey()
- {
+{
 document.querySelector(“#changeText”).innerHTML =
  "Hi " +
 document.querySelector("#team").value;
-
+}
  </script>
 </head>
 <body>
@@ -23,8 +19,7 @@ document.querySelector("#team").value;
 <form>
  Major: <input type=text id="major">
 <br>
- School: <input type=text id="school"
- onchange="glue();"><br>
+ School: <input type=text id="school"><br>
  Team: <input type=text id="team"
 onchange="hey()!;"><br><br><br><br>
 </form>
