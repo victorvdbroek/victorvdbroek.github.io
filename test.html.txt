@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=”en”>
+ <head>
+ <title>Javascript</title>
+ <script>
+ function glue()
+ {
+ document.querySelector(“#full”).value =
+ document.querySelector(“#first”).value
+ + “ “
+ + document.querySelector(“#last”).value
+ }
+ function hey()
+ {
+document.querySelector(“#changeText”).innerHTML =
+ "Hi " +
+document.querySelector("#first").value;
+ }
+ </script>
+ </head>
+ <body>
+ <form name=inclass>
+ First: <input type=text id="first"
+ onchange="hey();" ><br>
+ Last: <input type=text id="last"
+ onchange="glue();" ><br>
+ Full: <input type=text id="full">
+ <input type=reset value="clear entries">
+ </form>
+ <div id=changeText>
+ Here is some text.
+ </div>
+ </body>
+</html>
