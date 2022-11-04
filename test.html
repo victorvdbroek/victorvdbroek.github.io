@@ -11,22 +11,22 @@
              + " "
              + document.querySelector("#animal").value
          }
-         function hey()
+          function hey()
          {
-           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#team").value;
+           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#first").value;
          }
       </script>
    </head>
    <body>
       <form name=inclass>
-        School: <input type=text id="school"><br>
+        School: <input type=text id="school">onchange="hey();"><br>
         Animal:  <input type=text id="animal" 
                           onchange="glue();"><br>
-        Team mascot:  <input type=text id="team" onchange="Hi ();"><br>
+        Team mascot:  <input type=text id="team"><br>
         <input type=reset value="clear entries">
       </form>
       <div id=changeText>
-      Here is some text.
+   
       </div>
    </body>
 </html>
