@@ -4,18 +4,7 @@
 
 <head>
 <script>
-function glue()
- {
- document.querySelector(“#school”).value =
- document.querySelector(“#sport”).value
- + “ “
- + document.querySelector(“#major”).value
- }
- function hey()
- {
-document.querySelector(“#changeText”).innerHTML =
- "Hi " +
-document.querySelector("#major").value;
+
  </script>
 </head>
 <body>
@@ -23,12 +12,11 @@ document.querySelector("#major").value;
 <h1>College Survey!</h1>
 
 <form>
-  <label for="school">School:</label><br>
-  <input type="text" id="school" name="school" value=><br>
-  <label for="sport">Sport:</label><br>
-  <input type="text" id="sport" name="sport" value=><br>
- <label for="major">Major:</label><br>
-  <input type="text" id="major" name="major" value=><br><br><br>
+ Major: <input type=text id="major"><br>
+ School: <input type=text id="school"
+ onchange="glue();" ><br>
+ Team: <input type=text id="team"><br><br><br>
+</form>
 
 
   <input type="checkbox" id="year1" name="year1" value="freshmen">
