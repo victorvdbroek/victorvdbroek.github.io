@@ -3,21 +3,18 @@
 
 
 <head>
- <title>College Survey</title>
- <script>
- function glue()
+function glue()
  {
- document.querySelector(“#major”).value =
- document.querySelector(“#school”).value
+ document.querySelector(“#school”).value =
+ document.querySelector(“#sport”).value
  + “ “
- + document.querySelector(“#sport”).value
+ + document.querySelector(“#major”).value
  }
- function Welcome()
+ function hey()
  {
 document.querySelector(“#changeText”).innerHTML =
- "I hope you like " +
-document.querySelector("#school").value;
- }
+ "Hi " +
+document.querySelector("#major").value;
  </script>
 <body>
 
