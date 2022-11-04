@@ -6,16 +6,13 @@
 <script>
 function glue()
  {
- document.querySelector(“#full”).value =
- document.querySelector(“#first”).value
- + “ “
- + document.querySelector(“#last”).value
+ + document.querySelector(“#team”).value
  }
  function hey()
  {
 document.querySelector(“#changeText”).innerHTML =
  "Hi " +
-document.querySelector("#first").value;
+document.querySelector("#team").value;
 
  </script>
 </head>
@@ -29,7 +26,7 @@ document.querySelector("#first").value;
  School: <input type=text id="school"
  onchange="glue();"><br>
  Team: <input type=text id="team"
-onchange="I hope the () win!;"><br><br><br><br>
+onchange="hey()!;"><br><br><br><br>
 </form>
 
 
