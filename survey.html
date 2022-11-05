@@ -1,30 +1,34 @@
 
-<html>
-
-
-<head>
-<script>
-function add()
- {
- document.querySelector("#team").value<br>
- = document.querySelector("#school").value<br>
- + document.querySelector("#animal").value;<br>
- }
- </script>
-</head>
-<body>
-
-<h1>College Survey!</h1>
-
-<form>
- School: <input type=text id="school">
-<br>
- Animal: <input type=text id="animal"
-onchange="glue();" ><br>
- Teammascot: <input type=text id="team"
-onchange="GO();" ><br><br><br><br>
-<input type="reset" value="Reset">
-</form>
+<html lang="en"> 
+   <head>
+      <title>Javascript</title>
+      <script>
+         function glue()
+         {
+           document.querySelector("#full").value = 
+               document.querySelector("#first").value
+             + " "
+             + document.querySelector("#last").value
+         }
+         function hey()
+         {
+           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#first").value;
+         }
+      </script>
+   </head>
+   <body>
+      <form name=inclass>
+        First: <input type=text id="first" onchange="hey();"><br>
+        Last:  <input type=text id="last" 
+                          onchange="glue();"><br>
+        Full:  <input type=text id="full"><br>
+        <input type=reset value="clear entries">
+      </form>
+      <div id=changeText>
+      Here is some text.
+      </div>
+   </body>
+</html>
 
 
 
