@@ -26,12 +26,18 @@
 
 
 
-
+<script>
+ }
+         function hey()
+         {
+           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#year2").value;
+         }
+</script>
 
   <input type="checkbox" id="year1" name="year1" value="freshmen">
   <label for="year1">Freshmen</label><br>
   <input type="checkbox" id="year2" name="year2" value="sophomore">
-  <label for="vehicle2">Sophomore</label><br>
+  <label for="year2">Sophomore</label> onchange="hey();"><br>
   <input type="checkbox" id="year3" name="year3" value="junior">
   <label for="year3">Junior</label><br>
 <input type="checkbox" id="year4" name="year4" value="senior+">
