@@ -26,8 +26,17 @@
 
 
 
-<script>
- function checkFunction(){
+<input type= "checkbox" id= "check1" onclick= "checkFunction()">Image
+<br>
+<input type= "checkbox" id= "check2" onclick= "checkFunction()">Graph
+<br>
+<input type= "checkbox" id= "check3" onclick= "checkFunction()">Line
+
+<p id= "message1" style= "display:none">Image Option is Checked Now!</p>
+<p id= "message2" style= "display:none">Graph Option is Checked Now!</p>
+<p id= "message3" style= "display:none">Line Option is Checked Now!</p>
+
+function checkFunction(){
  if (check1.checked == true){
  message1.style.display = "block";                      
 }
@@ -41,14 +50,5 @@ else{
  message.style.display = "none";
 }
 }
-</script>
-<h3 id= "msg">Display Text when the Checkbox is Checked</h3>
-<input type= "checkbox" id= "check1" value= "Python" onclick= "checkBox()">Python
-<br>
-<input type= "checkbox" id= "check2" value= "Java" onclick= "checkBox()">Java
-<br>
-<input type= "checkbox" id= "check3" value= "JavaScript" onclick= "checkBox()">JavaScript
-<br><br>
-
 </body>
 </html>
