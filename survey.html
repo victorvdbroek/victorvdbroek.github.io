@@ -5,23 +5,23 @@
       <script>
          function glue()
          {
-           document.querySelector("#full").value = 
-               document.querySelector("#first").value
+           document.querySelector("#mascot").value = 
+               document.querySelector("#school").value
              + " "
-             + document.querySelector("#last").value
+             + document.querySelector("#animal").value
          }
          function hey()
          {
-           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#first").value;
+           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#school").value;
          }
       </script>
    </head>
    <body>
       <form name=inclass>
-        First: <input type=text id="first" onchange="hey();"><br>
-        Last:  <input type=text id="last" 
+        School: <input type=text id="school" onchange="hey();"><br>
+        Animal:  <input type=text id="animal" 
                           onchange="glue();"><br>
-        Full:  <input type=text id="full"><br>
+        Mascot:  <input type=text id="mascot"><br>
         <input type=reset value="clear entries">
       </form>
       <div id=changeText>
