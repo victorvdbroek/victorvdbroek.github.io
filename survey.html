@@ -26,26 +26,21 @@
 
 
 
-<script>
- }
-         function hey()
-         {
-           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#year2").value;
-         }
-</script>
 
-  <input type="checkbox" id="year1" name="year1" value="freshmen">
-  <label for="year1">Freshmen</label><br>
-  <input type="checkbox" id="year2" name="year2" value="sophomore">
-  <label for="year2">Sophomore</labell> <onchange="hey();"><br>
-  <input type="checkbox" id="year3" name="year3" value="junior">
-  <label for="year3">Junior</label><br>
-<input type="checkbox" id="year4" name="year4" value="senior+">
-  <label for="year4">Senior or Older</label><br><br><br>
-<input type=reset value="clear entries">
-</form>
-<div id=changeText>
-      Here is some text.
-      </div>
+ function checkFunction(){
+ if (check1.checked == true){
+ message1.style.display = "block";                      
+}
+else if (check2.checked == true){
+ message2.style.display = "block";                      
+}
+else if (check3.checked == true){
+ message3.style.display = "block";                      
+}
+else{
+ message.style.display = "none";
+}
+}
+
 </body>
 </html>
