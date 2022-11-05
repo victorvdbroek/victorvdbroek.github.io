@@ -23,8 +23,8 @@
         Animal:  <input type=text id="animal" 
                           onchange="glue();"><br>
         Team mascot:  <input type=text id="team"><br>
-        <input type=reset value="clear entries">
-      </form>
+  
+
       <div id=changeText>
    Welcome!
       </div>
@@ -46,6 +46,8 @@
 <p id= "message1" style= "display:none">You like your mascot!</p>
 <p id= "message2" style= "display:none">I'm sorry you don't like it</p>
 <p id= "message3" style= "display:none">I hope your mascot gets better!</p>
+<input type=reset value="clear entries">
+</form>
 
 <script>
 function checkFunction(){
@@ -62,6 +64,7 @@ else{
  message.style.display = "none";
 }
 }
+
 </script>
 </body>
 </html
