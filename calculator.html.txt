@@ -1,0 +1,24 @@
+<html>
+ <head>
+ <title>calculator</title>
+
+ <script>
+ var bgToggle=true;
+ function makeRed()
+ {
+ if (bgToggle) {
+
+document.querySelector('body').style.backgroundColo
+r="red";
+ bgToggle=false;
+ } else {
+
+document.querySelector('body').style.backgroundColo
+r="white";
+ bgToggle=true;
+ }
+ }
+ </script>
+ </form>
+ </body>
+</html>
