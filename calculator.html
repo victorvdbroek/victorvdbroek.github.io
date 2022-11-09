@@ -59,10 +59,19 @@ function myFunction4() {
   document.body.style.backgroundColor = "orange";
 }
 </script><br><br>
-<p id="input">first summation: <input id="one1">
-<p id="input">second summation Number: <input id="one2">
+<p id="input">First Summation: <input id="one1">
+<p id="input">Second Summation: <input id="one2">
 
-
+<script>
+function createNumberArray(lowEnd, highEnd) {
+    var start = lowEnd;
+    var array = [start];
+    while (start < highEnd) {
+        array.push(start);
+        start++;
+    }
+} 
+</script>
 
 </body>
 </html>
