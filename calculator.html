@@ -61,15 +61,18 @@ function myFunction4() {
 </script>
 
 
-function getSum(n)
-{
-    var sum = 0;
-    while (n != 0) {
-        sum = sum + n % 10;
-        n = parseInt(n / 10);
-    }
-    return sum;
-}
+<p>
+  Click the button to calculate x.
+  <button onclick="myFunction()">Try it</button>
+</p>
+<p>
+  Enter first number:
+  <input type="text" id="txt1" name="text1" value="1">
+  Enter second number:
+  <input type="text" id="txt2" name="text2" value="2">
+</p>
+<p id="demo"></p>
+
 
 
 
