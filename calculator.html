@@ -60,37 +60,25 @@ function myFunction4() {
 }
 </script><br><br>
 
-
-<input type="text" name="num1" id="num1" onkeyup="sum()">
-  <input type="text" name="num2" id="num2" onkeyup="sum()">
-  <input type="text" name="num2" id="result">
-
-  <script>
-     function sum()
-     {
-
-        var number1 = document.getElementById('num1').value;
-        var number2 = document.getElementById('num2').value;
-
-        if (number1 == '') {
-           number1 = 0
-           var num3 = parseInt(number1) + parseInt(number2);
-           document.getElementById('result').value = num3;
+<script>
+function numberSum(S){
+    var a=1;
+    var sum=0;
+        while(a<=S){
+            sum+=a++;
         }
-        else if(number2 == '')
-        {
-           number2 = 0;
-           var num3 = parseInt(number1) + parseInt(number2);
-           document.getElementById('result').value = num3;
-        }
-        else
-        {
-           var num3 = parseInt(number1) + parseInt(number2);
-           document.getElementById('result').value = num3;
-        }
+        return(sum);
+}
+function go(){
+    val = document.getElementById("value").value;
+    document.getElementById("results").innerHTML=val+":"+numberSum(val)
 
-     }
-  </script>
+}
+</script>
+
+<input id="value">
+<input type="Submit" onclick="go();">
+<p id="results"></p>
 
 
 
