@@ -61,26 +61,25 @@ function myFunction4() {
 </script><br><br>
 
 
-<p>
-  Click the button to calculate.
-  <button onclick="myFunction()">Click Here</button>
-</p>
-<p>
- Start the summation:
-  <input type="text" id="txt1" name="text1" value="1">
- End the summation:
-  <input type="text" id="txt2" name="text2" value="2">
-</p>
-<p id="demo"></p>
+ <script type="text/javascript">
+            function addition()
+            {
+                var a = parseInt(form.input1.value);
+                var b = parseInt(form.input2.value);
+                var c = a+b
+                document.write(c);
+            }
+        </script>
+    </head>
 
-<script>
-
-function myFunction() {
-  var y = document.getElementById("txt1").value;
-  var z = document.getElementById("txt2").value;
-  var x = y + z;
-  document.getElementById("demo").innerHTML = x;
-}
+    <body>
+        <form name="form" method="GET">
+        <input type="text" name="input1" value=20><br>
+        <input type="text" name="input2" value=10><br>
+        <input type="button" value="ADD" onclick="addition()">
+        </form>
+    </body>
+</html>
 
 </script>
 
