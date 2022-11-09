@@ -59,19 +59,17 @@ function myFunction4() {
   document.body.style.backgroundColor = "orange";
 }
 </script><br><br>
-<p id="input">First Summation: <input id="one1">
-<p id="input">Second Summation: <input id="one2">
 
-<script>
-function createNumberArray(lowEnd, highEnd) {
-    var start = lowEnd;
-    var array = [start];
-    while (start < highEnd) {
-        array.push(start);
-        start++;
-    }
-} 
-</script>
+ <script type="text/javascript">
+        var lowEnd = 25;
+        var highEnd = 30;
+        var list = [];
+        for (var i = lowEnd; i <= highEnd; i++) {
+            list.push(i);
+        }
+        console.log(list);
+    </script>
+
 
 </body>
 </html>
