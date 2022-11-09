@@ -61,15 +61,16 @@ function myFunction4() {
 </script>
 
 
-<script>
- function doCount()
- {
- var i;
- for (i=0; i<5; i++) {
- alert("Your number is "+i);
- }
- }
- </script>
+function getSum(n)
+{
+    var sum = 0;
+    while (n != 0) {
+        sum = sum + n % 10;
+        n = parseInt(n / 10);
+    }
+    return sum;
+}
+
 
 
 
