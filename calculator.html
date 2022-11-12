@@ -68,21 +68,29 @@ function myFunction4() {
   <input type="submit" value="Submit">
 </form>
 
+<form name>
+ Enter an integer to sum to: <input
+type=text id="N"><br>
+ <input type=button value="Start the Sum"
+onclick="doSum();">
+ <div id="sumHere">
+ Your sum is:
+ </div>
+
 <script>
- function doCount()
+ function doSum()
  {
- var i;
- for (i=0; i<5; i++) {
- alert("Your number is "+i);
+ var sum=0;
+ var N = parseInt(
+document.querySelector("#N").value );
+ for (i=1; i<=N; i++) {
+ sum += i;
  }
+
+document.querySelector("#sumHere").innerHTML =
+"Your sum is: "+sum;
  }
  </script>
- </head>
- <body>
- <form>
- <input type=button value="Counting"
-onclick="doCount();">
- </form>
 
 </body>
 </html>
