@@ -3,7 +3,6 @@
 
 <html>
 <head>
-<form>
 <title>assignment7</title>
 <h1>Victor's Magic Calculator</h1>
 <script>
@@ -42,12 +41,12 @@ Division Result = <input id="divide"></p><br><br>
 
 
 <h1> Choose Your Color </h1>
-
+<form>
 <button type="button1" onclick="myFunction1()">Red</button>
 <button type="button2" onclick="myFunction2()">Blue</button>
 <button type="button3" onclick="myFunction3()">Green</button>
-<button type="button4" onclick="myFunction4()">Orange</button>
-
+<button type="button4" onclick="myFunction4()">Orange</button><br>
+  <input type="reset" value="Reset">
 <script>
 function myFunction1() {
   document.body.style.backgroundColor = "red";
@@ -65,7 +64,7 @@ function myFunction4() {
 
 
 
-
+<form>
 First Number <input
 type=text id="n1"><br>
 Second Number <input
@@ -90,6 +89,6 @@ document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
  }
  </script>
   <input type="reset" value="Reset">
-</form>
+
 </body>
 </html>
