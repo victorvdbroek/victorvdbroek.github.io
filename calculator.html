@@ -64,16 +64,16 @@ function myFunction4() {
  function doSum()
  {
  var sum=0;
- var N = parseInt(
-document.querySelector("#N1").value );
- for (i=1; i<=N1; i++) {
+ var start = parseInt(document.querySelector("#n1").value );
+ var end = parseInt(document.querySelector("#n2").value );
+ for (var i=start; i<=end; i++) {
  sum += i;
  }
 
-document.querySelector("#sumHere").innerHTML =
-"Your sum is: "+sum;
+document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
  }
  </script>
+
 
 First Number <input
 type=text id="n1"><br>
