@@ -26,7 +26,7 @@ function fun()
 </script>
 </head>
 <body>
-
+<form>
 <p id="input">First Number: <input id="one">
 <br/><br/>
 Second Number: <input id="two"></p>
@@ -75,7 +75,6 @@ document.querySelector("#sumHere").innerHTML =
  }
  </script>
 
-<form>
 First Number <input
 type=text id="n1"><br>
 Second Number <input
@@ -85,8 +84,7 @@ onclick="doSum();">
  <div id="sumHere">
  Your sum is:
  </div>
-
-<body>
-<button onclick="clearContent()">clear</button>
+<input type="reset" value="Reset">
+</form>
 </body>
 </html>
