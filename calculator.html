@@ -1,4 +1,6 @@
 
+
+
 <html>
 <head>
 <title>assignment7</title>
@@ -26,7 +28,7 @@ function fun()
 </script>
 </head>
 <body>
-<form>
+
 <p id="input">First Number: <input id="one">
 <br/><br/>
 Second Number: <input id="two"></p>
@@ -37,7 +39,7 @@ Subtraction Result = <input id="subtract"><br/><br/>
 Multiplication Result = <input id="multiply"><br/><br/>
 Division Result = <input id="divide"></p><br><br>
 
-</form>
+
 <h1> Choose Your Color </h1>
 
 <button type="button1" onclick="myFunction1()">Red</button>
@@ -60,6 +62,19 @@ function myFunction4() {
 }
 </script><br><br>
 
+
+
+<form>
+First Number <input
+type=text id="n1"><br>
+Second Number <input
+type=text id="n2"><br>
+ <input type=button value="Start the Sum"
+onclick="doSum();">
+ <div id="sumHere">
+ Your sum is:
+ </div>
+
 <script>
  function doSum()
  {
@@ -73,18 +88,6 @@ function myFunction4() {
 document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
  }
  </script>
-
-<form>
-First Number <input
-type=text id="n1"><br>
-Second Number <input
-type=text id="n2"><br>
- <input type=button value="Start the Sum"
-onclick="doSum();">
- <div id="sumHere">
- Your sum is:
- </div>
-<input type="reset" value="Reset">
-</form>
+  <input type="reset" value="Reset">
 </body>
 </html>
