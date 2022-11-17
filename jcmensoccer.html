@@ -24,13 +24,31 @@ function myFunction3() {
 }
 </script><br><br>
 
-<h2 style="color:red;">Put your favorite player's name! </h2>    
-<form action="/action_page.php">
-  <label for="fname"><b>First name:</b> </label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname"><b>Last name:</b> </label>
-  <input type="text" id="lname" name="lname"><br><br>
-</form>
+
+
+<h2 style="color:red;">Find your favorite player!</h2>  
+ function glue()
+         {
+           document.querySelector("#fav").value = 
+               document.querySelector("#first").value
+             + " "
+             + document.querySelector("#last").value
+         }
+          function hey()
+         {
+           document.querySelector("#changeText").innerHTML = "Go "+ document.querySelector("#fav").value;
+         }
+      </script>
+   <body>
+      <form>
+        First: <input type=text id="first" onchange="hey();"><br>
+        Last:  <input type=text id="last" 
+                          onchange="glue();"><br>
+    Favorite:  <input type=text id="fav"><br>
+<div id=changetext>
+Text.
+</div>  
+
 <h2 style="color:red;">Rate the Team!</h2>
 
 <script>
@@ -57,13 +75,34 @@ else{
 <input type= "checkbox" id= "check3" onclick= "checkFunction()">Okay
 
 <p id= "message1" style= "display:none">Go Eagles!</p>
-<p id= "message2" style= "display:none">Im sorry, Tell us why in the next below.</p>
+<p id= "message2" style= "display: none">Im sorry, Tell us why in the text below.</p>
 <p id= "message3" style= "display:none">We will get better!</p><br><br>
-<input type=reset value="clear checkboxes">
-<form>
+<input type=reset value="Clear Checkboxes">
+<form><br><br>
 
 
-
+  function glue()
+         {
+           document.querySelector("#fav").value = 
+               document.querySelector("#first").value
+             + " "
+             + document.querySelector("#last").value
+         }
+          function hey()
+         {
+           document.querySelector("#changeText").innerHTML = "Go Team "+ document.querySelector("#team").value;
+         }
+      </script>
+   </head>
+   <body>
+      <form name=inclass>
+        School: <input type=text id="school" onchange="hey();"><br>
+        Animal:  <input type=text id="animal" 
+                          onchange="glue();"><br>
+        Team Mascot:  <input type=text id="team"><br>
+<div id=changetext>
+Text.
+</div>
 
 
 
