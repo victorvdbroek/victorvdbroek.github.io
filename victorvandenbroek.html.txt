@@ -1,6 +1,6 @@
 <html>
 <head>
-<Title> Drew Murta</Title>
+<Title>Victor Vandenbroek</Title>
 <style>
 h1 {
   font-size: 70px;
@@ -10,8 +10,8 @@ H2 {
 }
 </style>
 </head>
-<h1 style="text-align:center;">Drew Murta</h1><br>
-<img src="https://www.juniatasports.net/sports/msoc/2022-23/bios/Murta_Andrew.png?" style="width 300px;height:300px;">
+<h1 style="text-align:center;">Victor Vandnenbroek</h1><br>
+<img src="https://www.juniatasports.net/sports/msoc/2022-23/bios/Vanderbroek_Victor.png?" style="width 300px;height:300px;">
 
 <style>
 h1 {
@@ -36,8 +36,8 @@ table, th, td {
 
     <td>18</td>
     <td>18</td>
-    <td>2</td>
-<td>1</td>
+    <td>1</td>
+<td>2</td>
 </table><br>
 
 <h2>When did He Score or Assist?</h2>
@@ -50,7 +50,7 @@ table, th, td {
 
 
 <form>
-<h2>Select what position you think Drew Plays:</h2>
+<h2>Select what position you think Victor Plays:</h2>
   <input type="radio" id="defense" name="Defense" value="Defense">
   <label for="Defense">Defense </label><br>
   <input type="radio" id="Midfield" name="Midfield" value="Midfield">
@@ -63,11 +63,11 @@ table, th, td {
                         color: white" />
 </form><br>
 
-<h2 id="drew" onclick="myFunction()">Click me to find the answer.</h2>
+<h2 id="victor" onclick="myFunction()">Click me to find the answer.</h2>
 
 <script>
 function myFunction() {
-  document.getElementById("drew").innerHTML = "I play Midfield!";
+  document.getElementById("victor").innerHTML = "I play Midfield!";
 }
 </script><br>
 
@@ -75,24 +75,23 @@ function myFunction() {
 
 
 
-<h2> Click below to go back or check out Victor</h2>
+
+
+
+
+
+
+
+
+
+<h2> Click below to go back or check out Drew</h2>
 <a href="https://victorvdbroek.github.io/jcmensoccer.html">
 <img src="https://pbs.twimg.com/media/E-SwTAPVgAAebB1.jpg" style="width 200px;height:200px;">
-</a> <a href="hhttps://victorvdbroek.github.io/victorvandenbroek.html">
-<img src="https://www.juniatasports.net/sports/msoc/2022-23/bios/Vanderbroek_Victor.png?" style="width 200px;height:200px;">
+<a href="https://victorvdbroek.github.io/drewmurta.html">
+<img src="https://www.juniatasports.net/sports/msoc/2022-23/bios/Murta_Andrew.png?" style="width 200px;height:200px;">
 </a>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+</body>
 </html>
